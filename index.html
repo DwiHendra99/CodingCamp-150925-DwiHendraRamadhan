@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Form input -->
+    <form id="todo-form">
+      <input type="text" id="task-input" placeholder="Add a task..." />
+      <input type="date" id="date-input" />
+      <button type="submit" id="add-btn">+</button>
+    </form>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="filter-btn">FILTER</button>
+      <button id="delete-all-btn" class="danger">DELETE ALL</button>
+    </div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4" class="empty">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
